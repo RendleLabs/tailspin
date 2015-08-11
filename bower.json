@@ -1,0 +1,54 @@
+{
+  "name": "tailspin",
+  "version": "1.0.0",
+  "authors": [
+    "CloudLens"
+  ],
+  "description": "Tail logs in a single page",
+  "main": "index.js",
+  "keywords": [
+    "docker"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootswatch-dist": "superhero",
+    "fontawesome": "~4.4.0",
+    "ansi_up": "~1.2.1"
+  },
+  "overrides": {
+    "bootswatch-dist": {
+      "normalize": {
+        "fonts": [
+          "*.otf",
+          "*.eot",
+          "*.svg",
+          "*.ttf",
+          "*.woff",
+          "*.woff2"
+        ]
+      }
+    },
+    "fontawesome": {
+      "main": [
+        "css/font-awesome.css"
+      ],
+      "normalize": {
+        "fonts": [
+          "*.otf",
+          "*.eot",
+          "*.svg",
+          "*.ttf",
+          "*.woff",
+          "*.woff2"
+        ]
+      }
+    }
+  }
+}

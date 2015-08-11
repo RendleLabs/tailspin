@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TailSpin</title>
+    <link href="/vendor/css/bootstrap.css" rel="stylesheet">
+    <link href="/vendor/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <a href="/" class="navbar-brand">TAILSPIN</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div data-spy="affix">
+                    <ul id="tabs" class="nav nav-pills nav-stacked"></ul>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div id="panes" class="tab-content"></div>
+            </div>
+        </div>
+    </div>
+
+<script src="/vendor/js/jquery.js"></script>
+<script src="/vendor/js/bootstrap.js"></script>
+<script src="/vendor/js/ansi_up.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
