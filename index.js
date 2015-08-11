@@ -12,3 +12,4 @@ io.on("connection", function (socket) {
     docker.on("stderr", function (log) { return socket.emit("stderr", log); });
 });
 server.listen(3000);
+console.log("Listening on http://localhost:3000 ...");

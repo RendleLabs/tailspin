@@ -4,7 +4,8 @@ var gulp = require('gulp'),
     tsc = require('gulp-typescript'),
     concat = require('gulp-concat'),
     runSequence = require('run-sequence'),
-    rm = require('gulp-rm');
+    rm = require('gulp-rm'),
+    nodemon = require('gulp-nodemon');
 
 var sources = {
     server: ['./server/typings/**/*.d.ts', './server/**/*.ts'],
@@ -78,4 +79,10 @@ gulp.task('watch', ['pre-watch'], function() {
     gulp.watch(sources.server, ['server']);
 });
 
-gulp.task('default', ['server', 'bower']);
+gulp.task('default', ['server', 'bower', 'client', 'css', 'html']);
+
+gulp.task('serve', ['watch'], function() {
+    nodemon({
+        script: 'index.js'
+    });
+});
